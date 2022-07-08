@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44;
+}
+
+
+.container {
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    width: 500px;
+    padding: 30px 50px;
+    border-radius: 1em;
+    box-shadow: 7px 7px 7px 7px #2e2e44;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.theme{
+    
+    color:#2e2e44;
+    font-size: 1.5em;
+    margin-right: 65%;
+}
+
+.clock{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hours, .dots, .minutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    padding: 0 10px;
+    line-height: 125px;
+}
+
+.hours, .minutes{
+    font-size: 6em;
+}
+
+.dots{
+    font-size: 4em;
+    color:#2e2e44;
+}
+
+.session{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.meridian, .seconds{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.day-name, .month, .day, .year{
+    margin-left: 10px;
+}
+
+
+.format{
+    font-size: 1.7em;
+}
+
+.switch {
+    position: absolute;
+    top: 65%;
+    left: 62%;
+}
+
+.slider {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(224, 173, 173);
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.slider > .input{
+    width: 20px;
+    height: 20px;
+    background: #2e2e44;;
+    border-radius: 10px;
+}
+
+.slider.active > .input{
+    margin-left: 60%;
+}
+
+.light{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.theme{
+    color:rgb(16, 16, 16);
+}
+
+.dark{
+    background-color: rgb(34, 66, 99);
+    color: rgb(172, 167, 167);
+}
+
+.light .container{
+    background-color: aquamarine;
+}
+
+.dark .container{
+    background-color: rgb(17, 34, 57);
+    color: aliceblue;
+}
+/* 
+.analog{
+    width: 40vmin;
+    height: 40vmin;
+    position: relative;
+    background: url(/analog.jpeg) no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    margin: auto;
+}
+#analog_hour, #analog_min, #analog_sec{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+/* .pin { */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1em;
+    height: 1em;
+    background: rgb(38, 0, 255);
+    border: 2px solid #ffffff;
+    border-radius: 10em;
+    margin: auto;
+    z-index: 10;
+} */
+
+  
+/* #analog_hour {
+    width: 1.8%;
+    height: 55%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+  
+#analog_min {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+  
+#analog_sec {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+} */
